@@ -1,0 +1,52 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+         https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+  <servlet>
+    <servlet-name>CreateAccount</servlet-name>
+    <servlet-class>servlet.CreateAccountServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateAccount</servlet-name>
+    <url-pattern>/create</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Deposit</servlet-name>
+    <servlet-class>servlet.DepositServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Deposit</servlet-name>
+    <url-pattern>/deposit</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Withdraw</servlet-name>
+    <servlet-class>servlet.WithdrawServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Withdraw</servlet-name>
+    <url-pattern>/withdraw</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Transfer</servlet-name>
+    <servlet-class>servlet.TransferServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Transfer</servlet-name>
+    <url-pattern>/transfer</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ViewAccounts</servlet-name>
+    <servlet-class>servlet.ViewAccountsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewAccounts</servlet-name>
+    <url-pattern>/view</url-pattern>
+  </servlet-mapping>
+
+</web-app>
